@@ -7,4 +7,6 @@ import Header from './components/Header.vue';
 		<router-view> </router-view>
 	</div>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+@import './assets/sass/reset';
+</style>
