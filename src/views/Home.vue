@@ -23,7 +23,7 @@
 @import '../assets/sass/settings';
 
 .home {
-	height: 80vh;
+	min-height: 80vh;
 	padding: 1em;
 	text-align: center;
 	@include layout.flex(column, nowrap, center, center);
