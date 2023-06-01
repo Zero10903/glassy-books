@@ -1,6 +1,7 @@
 <script setup>
 import { bookData } from '../data/books';
 </script>
+
 <template>
 	<section class="recommendations">
 		<h2 class="recommendations__title">Recomendaciones de libros</h2>
@@ -15,6 +16,7 @@ import { bookData } from '../data/books';
 		</article>
 	</section>
 </template>
+
 <style lang="scss">
 @use '../assets/sass/layout';
 @import '../assets/sass/settings';
