@@ -13,14 +13,4 @@ export const bookData = [
         Este es uno de esos libros que te marcan de por vida, tiene muchos momentos hermosos y frases preciosas que te 
         darán mucho en lo que pensar. Te lo recomiendo encarecidamente ^^`,
 	},
-	{
-		title: 'Libro 2',
-		url: '',
-		description: `Descripción libro 2 lorem ipsum`,
-	},
-	{
-		title: 'Libro 3',
-		url: '',
-		description: `Descripción libro 3 lorem ipsum`,
-	},
 ];
