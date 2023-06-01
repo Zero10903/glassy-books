@@ -31,10 +31,14 @@ import { bookData } from '../data/books';
 	}
 }
 .book {
+	margin: 0.5em;
 	padding: 1em;
 
 	text-align: center;
+
+	box-shadow: $box-shaow;
 	border-radius: $box-radius;
+
 	@include layout.flex-center(column);
 
 	&__image {
