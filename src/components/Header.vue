@@ -29,6 +29,9 @@ const toggleMenu = () => {
 		</section>
 		<nav class="menu__navbar" :class="{ 'menu__navbar--open': isMenuOpen }">
 			<router-link to="/" class="menu__link">Inicio</router-link>
+			<router-link to="/recommendations" class="menu__link"
+				>Recomendaciones</router-link
+			>
 			<router-link to="/contactanos" class="menu__link"
 				>Contactanos</router-link
 			>

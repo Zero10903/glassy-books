@@ -11,8 +11,9 @@
 }
 
 // Center an element using flexbox
-@mixin flex-center($gap: 0) {
+@mixin flex-center($direction: row, $gap: 0) {
 	display: flex;
+	flex-direction: $direction;
 	justify-content: center;
 	align-items: center;
 
