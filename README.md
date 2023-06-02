@@ -1,29 +1,20 @@
-# 03-vue-routing
+<div align="center">
+    <h1>Glassy Books</h1>
+    <img srx="" alt="imagen de portada" width="100%"/>
+</div>
 
-This template should help get you started developing with Vue 3 in Vite.
+## ¿De qué se trata?
 
-## Recommended IDE Setup
+Este proyecto es una especie de "Blog" en el que recopilaré información sobre libros. Aquí subiré recomendaciones de libros que me gustan y, en el futuro, añadiré algunas funciones extra si se me ocurren.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Tecnologías usadas en el proyecto
 
-## Customize configuration
+- Vue.js
+- Vue Router
+- Sass (scss)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## ¿Cómo puedo aportar a este proyecto?
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+- Crea un fork del repositorio.
+- Realiza los cambios que consideres pertinentes y añade documentación.
+- Haz un Pull Request.
