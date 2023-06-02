@@ -5,17 +5,24 @@ import { bookData } from '../data/books';
 <template>
 	<section class="recommendations">
 		<h2 class="recommendations__title">Recomendaciones de libros</h2>
-		<article class="book" v-for="(book, index) in bookData" :key="index">
-			<div class="book__overlay"></div>
-			<img :src="book.url" alt="portada del libro" class="book__image" />
-			<div class="book__content">
-				<h3 class="book__title">{{ book.title }}</h3>
-				<div class="book__separator"></div>
-				<p class="book__text">
-					{{ book.description }}
-				</p>
-			</div>
-		</article>
+		<div class="books">
+			<article class="book" v-for="(book, index) in bookData" :key="index">
+				<div class="book__overlay"></div>
+				<img
+					:src="book.url"
+					alt="portada del libro"
+					draggable="false"
+					class="book__image"
+				/>
+				<div class="book__content">
+					<h3 class="book__title">{{ book.title }}</h3>
+					<div class="book__separator"></div>
+					<p class="book__text">
+						{{ book.description }}
+					</p>
+				</div>
+			</article>
+		</div>
 	</section>
 </template>
 
@@ -32,6 +39,10 @@ import { bookData } from '../data/books';
 		font-weight: bold;
 		font-size: $title-2;
 	}
+}
+.books {
+	@include layout.grid(1);
+	gap: 1em;
 }
 .book {
 	margin: 0.5em;
@@ -65,10 +76,34 @@ import { bookData } from '../data/books';
 	&__separator {
 		width: 90%;
 		height: 2px;
+		margin-bottom: 1em;
 		background: radial-gradient($color-dark, $color-light, $color-light);
 	}
-	&__text {
-		padding-top: 1em;
+}
+@media (min-width: 768px) {
+	.books {
+		@include layout.grid(2);
+	}
+	.book {
+		&__text {
+			max-height: 200px;
+			padding-inline: 0.5em;
+			overflow: auto;
+			scrollbar-width: thin;
+
+			&::-webkit-scrollbar {
+				width: 3px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $color-dark;
+				border-radius: 1em;
+			}
+		}
+	}
+}
+@media (min-width: 1024px) {
+	.books {
+		@include layout.grid(4);
 	}
 }
 </style>
