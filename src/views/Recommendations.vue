@@ -10,7 +10,8 @@ import { bookData } from '../data/books';
 			<img :src="book.url" alt="portada del libro" class="book__image" />
 			<div class="book__content">
 				<h3 class="book__title">{{ book.title }}</h3>
-				<p class="bood__text">
+				<div class="book__separator"></div>
+				<p class="book__text">
 					{{ book.description }}
 				</p>
 			</div>
@@ -53,10 +54,21 @@ import { bookData } from '../data/books';
 	&__image {
 		border-radius: $box-radius;
 	}
+	&__content {
+		@include layout.flex-center(column);
+	}
 	&__title {
 		margin: 1em 0em;
 		font-weight: bold;
 		font-size: $title-3;
+	}
+	&__separator {
+		width: 90%;
+		height: 2px;
+		background: radial-gradient($color-dark, $color-light, $color-light);
+	}
+	&__text {
+		padding-top: 1em;
 	}
 }
 </style>
