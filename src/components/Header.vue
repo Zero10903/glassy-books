@@ -90,6 +90,7 @@ const toggleMenu = () => {
 	}
 	&__link {
 		&:hover {
+			color: black;
 			text-decoration: underline;
 		}
 	}
