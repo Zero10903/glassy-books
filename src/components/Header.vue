@@ -96,4 +96,17 @@ const toggleMenu = () => {
 		}
 	}
 }
+@media (min-width: 1024px) {
+	.menu {
+		padding: 1.3em 2em;
+		@include layout.flex(row, nowrap, space-between, center, 2em);
+		&__btn {
+			display: none;
+		}
+		&__navbar {
+			max-height: fit-content;
+			flex-direction: row;
+		}
+	}
+}
 </style>
