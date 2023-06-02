@@ -89,6 +89,7 @@ const toggleMenu = () => {
 		}
 	}
 	&__link {
+		transition: $transition-time all ease-in-out;
 		&:hover {
 			color: black;
 			text-decoration: underline;
