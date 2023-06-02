@@ -43,6 +43,7 @@ const toggleMenu = () => {
 .menu {
 	margin: 0.5em;
 	padding: 0.5em;
+	margin-top: 0em;
 
 	border: $box-border;
 	border-radius: $box-radius;
