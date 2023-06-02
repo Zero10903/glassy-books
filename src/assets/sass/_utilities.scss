@@ -1,0 +1,8 @@
+// Background fit
+@mixin bg-fit {
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+}
