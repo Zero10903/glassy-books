@@ -44,6 +44,9 @@ const toggleMenu = () => {
 .menu {
 	margin: 1em;
 	padding: 1em;
+	position: sticky;
+	top: 1em;
+	z-index: 100;
 
 	box-shadow: $box-shadow;
 	border-radius: $box-radius;
