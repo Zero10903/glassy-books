@@ -7,6 +7,10 @@
 
 Este proyecto es una especie de "Blog" en el que recopilaré información sobre libros. Aquí subiré recomendaciones de libros que me gustan y, en el futuro, añadiré algunas funciones extra si se me ocurren.
 
+### ¿Quieres visualizar la web?
+
+Aquí te dejo una [Demo](https://glassy-books.netlify.app) para que puedas navegar por ella y visualizarla a gusto.
+
 ### Tecnologías usadas en el proyecto
 
 - Vue.js
