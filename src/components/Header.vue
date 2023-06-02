@@ -62,7 +62,6 @@ const toggleMenu = () => {
 		font-size: 1.4em;
 		font-weight: bold;
 		text-shadow: 0 0 0.4em $color-dark-transparent;
-		@include text.gradient($color-light, $color-dark);
 	}
 	&__btn {
 		@include layout.square(2em);
