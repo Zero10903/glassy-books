@@ -6,6 +6,7 @@ import { bookData } from '../data/books';
 	<section class="recommendations">
 		<h2 class="recommendations__title">Recomendaciones de libros</h2>
 		<article class="book" v-for="(book, index) in bookData" :key="index">
+			<div class="book__overlay"></div>
 			<img :src="book.url" alt="portada del libro" class="book__image" />
 			<div class="book__content">
 				<h3 class="book__title">{{ book.title }}</h3>
@@ -19,6 +20,7 @@ import { bookData } from '../data/books';
 
 <style lang="scss">
 @use '../assets/sass/layout';
+@use '../assets/sass/effect';
 @import '../assets/sass/settings';
 
 .recommendations {
@@ -33,14 +35,21 @@ import { bookData } from '../data/books';
 .book {
 	margin: 0.5em;
 	padding: 1em;
+	position: relative;
 
 	text-align: center;
 
-	box-shadow: $box-shaow;
+	box-shadow: $box-shadow;
 	border-radius: $box-radius;
 
 	@include layout.flex-center(column);
 
+	&__overlay {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		@include effect.glass($color-light-transparent);
+	}
 	&__image {
 		border-radius: $box-radius;
 	}

@@ -38,16 +38,17 @@ const toggleMenu = () => {
 
 <style lang="scss" scoped>
 @use '../assets/sass/layout';
+@use '../assets/sass/effect';
 @use '../assets/sass/text';
 @import '../assets/sass/settings';
 .menu {
-	margin: 0.5em;
-	padding: 0.5em;
-	margin-top: 0em;
+	margin: 1em;
+	padding: 1em;
 
-	border: $box-border;
+	box-shadow: $box-shadow;
 	border-radius: $box-radius;
 
+	@include effect.glass($color-light-transparent);
 	&__controls {
 		display: grid;
 		grid-template-columns: repeat(2, max-content);
@@ -57,6 +58,7 @@ const toggleMenu = () => {
 	&__logo {
 		font-size: 1.4em;
 		font-weight: bold;
+		text-shadow: 0 0 0.4em $color-dark-transparent;
 		@include text.gradient($color-light, $color-dark);
 	}
 	&__btn {

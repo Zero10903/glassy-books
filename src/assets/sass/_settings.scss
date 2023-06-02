@@ -1,6 +1,10 @@
+@use 'sass:color';
+
 // ===== COLOR
 $color-dark: #0a3a7f;
 $color-light: #72b8fd;
+$color-dark-transparent: color.adjust($color-dark, $alpha: -0.6);
+$color-light-transparent: color.adjust($color-light, $alpha: -0.6);
 
 // ===== TITLE
 $title-1: 1.8em;
@@ -11,7 +15,7 @@ $title-4: 1.1em;
 // ===== BOX
 $box-border: 1px solid black;
 $box-radius: 0.3em;
-$box-shaow: 0 0 0.7em 0.05em $color-dark;
+$box-shadow: 0 0 0.5em 0.3em $color-dark-transparent;
 
 // ===== TRANSITION
 $transition-time: 0.3s;
