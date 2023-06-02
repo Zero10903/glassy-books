@@ -35,5 +35,8 @@
 
 		@include text.gradient($color-light, $color-dark);
 	}
+	&__img {
+		max-width: 400px;
+	}
 }
 </style>
