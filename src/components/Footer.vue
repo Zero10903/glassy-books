@@ -39,6 +39,8 @@
 	box-shadow: $box-shadow;
 	border-radius: $box-radius;
 	@include effect.glass($color-light-transparent);
+	display: flex;
+	justify-content: flex-start;
 }
 .contact-us {
 	padding: 0.5em;
