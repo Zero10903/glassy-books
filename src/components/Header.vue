@@ -10,7 +10,7 @@ const toggleMenu = () => {
 <template>
 	<div class="menu">
 		<section class="menu__controls">
-			<p class="menu__logo">Vue Routing</p>
+			<p class="menu__logo">Glassy Books</p>
 
 			<button
 				class="menu__btn"
@@ -32,15 +32,13 @@ const toggleMenu = () => {
 			<router-link to="/recommendations" class="menu__link"
 				>Recomendaciones</router-link
 			>
-			<router-link to="/contactanos" class="menu__link"
-				>Contactanos</router-link
-			>
 		</nav>
 	</div>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/sass/layout';
+@use '../assets/sass/text';
 @import '../assets/sass/settings';
 .menu {
 	margin: 0.5em;
@@ -57,6 +55,8 @@ const toggleMenu = () => {
 	}
 	&__logo {
 		font-size: 1.4em;
+		font-weight: bold;
+		@include text.gradient($color-light, $color-dark);
 	}
 	&__btn {
 		@include layout.square(2em);
